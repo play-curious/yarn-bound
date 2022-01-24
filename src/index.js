@@ -5,4 +5,5 @@ const { OptionsResult, TextResult, CommandResult } = bondage
 YarnBound.OptionsResult = OptionsResult
 YarnBound.TextResult = TextResult
 YarnBound.CommandResult = CommandResult
+YarnBound.YarnBound = YarnBound
 export default YarnBound
