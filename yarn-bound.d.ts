@@ -17,8 +17,6 @@ export default class YarnBound<VariableStorage> {
   
   export type Result = TextResult | OptionsResult | CommandResult;
   
-  export {YarnBound}
-  
   export class TextResult {
     text: string;
     hashtags: string[];
