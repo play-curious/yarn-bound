@@ -18,7 +18,7 @@ export class YarnBound {
     this.currentResult = null
     this.history = []
     this.locale = locale
-    this.runner = new bondage.this.runner()
+    this.runner = new bondage.runner()
     this.runner.noEscape = true
 
     // To make template string dialogues more convenient, we will allow and strip
