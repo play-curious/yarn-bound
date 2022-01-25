@@ -10,7 +10,7 @@ declare module "yarn-bound" {
       locale?: string
     });
   
-    advance(optionIndex: number): void;
+    advance(optionIndex?: number): void;
   
     currentResult: Result;
     history: Result[];
