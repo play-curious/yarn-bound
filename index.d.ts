@@ -37,7 +37,6 @@ declare module "yarn-bound" {
   
   export interface Metadata {
       title: string;
-      someTag: string;
       filetags: string[];
   }
   
