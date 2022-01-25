@@ -18,7 +18,6 @@ export class YarnBound {
     this.currentResult = null
     this.history = []
     this.locale = locale
-    this.registerFunction;
     this.runner = new bondage.Runner()
     runner.noEscape = true
 

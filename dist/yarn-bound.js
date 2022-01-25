@@ -3753,7 +3753,7 @@ class YarnBound {
     this.currentResult = null;
     this.history = [];
     this.locale = locale;
-    const runner = new _index.default.Runner();
+    this.runner = new _index.default.Runner();
     runner.noEscape = true; // To make template string dialogues more convenient, we will allow and strip
     // uniform leading whitespace. The header delimiter will set the baseline.
 
@@ -3830,6 +3830,10 @@ class YarnBound {
 
     this.currentResult = next;
     this.bufferedNode = buffered;
+  }
+
+  registerFunction(name, func) {
+    this.runner.registerFunction(name, func);
   }
 
 }
