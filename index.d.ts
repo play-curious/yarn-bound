@@ -1,4 +1,4 @@
-declare namespace yarnBound{
+declare module "yarn-bound" {
   export class YarnBound<VariableStorage> {
     constructor(options: {
       dialogue: string,

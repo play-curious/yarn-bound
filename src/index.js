@@ -1,4 +1,4 @@
-export * as YarnBound from './yarn-bound.js'
+export {YarnBound} from './yarn-bound.js'
 export { 
     OptionsResult, 
     TextResult, 

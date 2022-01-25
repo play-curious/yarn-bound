@@ -1,7 +1,7 @@
 import bondage from '@mnbroatch/bondage/src/index.js'
 import parseLine from './line-parser'
 
-export default class YarnBound {
+export class YarnBound {
   constructor ({
     dialogue,
     variableStorage,

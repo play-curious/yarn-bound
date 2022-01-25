@@ -3720,14 +3720,14 @@ module.exports = exports.default;
 /***/ }),
 
 /***/ 424:
-/***/ ((module, exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
-exports["default"] = void 0;
+exports.YarnBound = void 0;
 
 var _index = _interopRequireDefault(__webpack_require__(167));
 
@@ -3834,8 +3834,7 @@ class YarnBound {
 
 }
 
-exports["default"] = YarnBound;
-module.exports = exports.default;
+exports.YarnBound = YarnBound;
 
 /***/ })
 
@@ -3893,17 +3892,16 @@ Object.defineProperty(exports, "TextResult", ({
     return _index.TextResult;
   }
 }));
-exports.YarnBound = void 0;
+Object.defineProperty(exports, "YarnBound", ({
+  enumerable: true,
+  get: function get() {
+    return _yarnBound.YarnBound;
+  }
+}));
 
-var _YarnBound = _interopRequireWildcard(__webpack_require__(424));
-
-exports.YarnBound = _YarnBound;
+var _yarnBound = __webpack_require__(424);
 
 var _index = __webpack_require__(167);
-
-function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
-
-function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 })();
 
 /******/ 	return __webpack_exports__;
