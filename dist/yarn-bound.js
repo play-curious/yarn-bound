@@ -3753,8 +3753,7 @@ class YarnBound {
     this.currentResult = null;
     this.history = [];
     this.locale = locale;
-    this.runner = new _index.default.this.runner(); // Bonjour
-
+    this.runner = new _index.default.this.runner();
     this.runner.noEscape = true; // To make template string dialogues more convenient, we will allow and strip
     // uniform leading whitespace. The header delimiter will set the baseline.
 
