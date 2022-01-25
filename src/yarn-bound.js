@@ -19,7 +19,7 @@ export class YarnBound {
     this.history = []
     this.locale = locale
     this.registerFunction;
-    const runner = new bondage.Runner()
+    this.runner = new bondage.Runner()
     runner.noEscape = true
 
     // To make template string dialogues more convenient, we will allow and strip
@@ -43,10 +43,6 @@ export class YarnBound {
         runner.registerFunction(...entry)
       })
     }
-
-    this.registerFunction = (funcName, func) => {
-      runner.registerFunction(funcName, func);
-    } 
 
     this.generator = runner.run(startAt)
     this.advance()
@@ -107,5 +103,9 @@ export class YarnBound {
 
     this.currentResult = next
     this.bufferedNode = buffered
+  }
+
+  registerFunction(name, func){
+    this.runner.registerFunction(name, func);
   }
 }

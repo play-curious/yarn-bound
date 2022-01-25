@@ -11,7 +11,7 @@ declare module "yarn-bound" {
     });
   
     advance(optionIndex?: number): void;
-    registerFunction(name: string, func: unknown): void;
+    registerFunction(name: string, func: () => unknown): void;
   
     currentResult: Result;
     history: Result[];
