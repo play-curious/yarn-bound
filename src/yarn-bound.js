@@ -18,8 +18,8 @@ export class YarnBound {
     this.currentResult = null
     this.history = []
     this.locale = locale
-    this.runner = new bondage.Runner()
-    runner.noEscape = true
+    this.runner = new bondage.this.runner()
+    this.runner.noEscape = true
 
     // To make template string dialogues more convenient, we will allow and strip
     // uniform leading whitespace. The header delimiter will set the baseline.
@@ -31,19 +31,19 @@ export class YarnBound {
         .join('\n')
     }
 
-    runner.load(dialogue)
+    this.runner.load(dialogue)
 
     if (variableStorage) {
       variableStorage.display = variableStorage.display || variableStorage.get
-      runner.setVariableStorage(variableStorage)
+      this.runner.setVariableStorage(variableStorage)
     }
     if (functions) {
       Object.entries(functions).forEach((entry) => {
-        runner.registerFunction(...entry)
+        this.runner.registerFunction(...entry)
       })
     }
 
-    this.generator = runner.run(startAt)
+    this.generator = this.runner.run(startAt)
     this.advance()
   }
 
