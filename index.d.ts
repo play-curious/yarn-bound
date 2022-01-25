@@ -30,7 +30,7 @@ declare module "yarn-bound" {
   }
   
   export class CommandResult {
-    text: string;
+    command: string;
     hashtags: string[];
     metadata: Metadata;
   }
