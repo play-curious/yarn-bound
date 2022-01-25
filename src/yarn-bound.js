@@ -18,6 +18,7 @@ export class YarnBound {
     this.currentResult = null
     this.history = []
     this.locale = locale
+    this.registerFunction;
     const runner = new bondage.Runner()
     runner.noEscape = true
 
@@ -42,6 +43,10 @@ export class YarnBound {
         runner.registerFunction(...entry)
       })
     }
+
+    this.registerFunction = (funcName, func) => {
+      runner.registerFunction(funcName, func);
+    } 
 
     this.generator = runner.run(startAt)
     this.advance()
