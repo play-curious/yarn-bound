@@ -1,4 +1,5 @@
-export default class YarnBound<VariableStorage> {
+declare namespace yarnBound{
+  export class YarnBound<VariableStorage> {
     constructor(options: {
       dialogue: string,
       startAt: string,
@@ -45,3 +46,4 @@ export default class YarnBound<VariableStorage> {
       isAvailable: boolean;
       hashtags: [];
   }
+}

@@ -3475,36 +3475,6 @@ module.exports = exports.default;
 
 /***/ }),
 
-/***/ 352:
-/***/ ((module, exports, __webpack_require__) => {
-
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-
-var _yarnBound = _interopRequireDefault(__webpack_require__(424));
-
-var _index = _interopRequireDefault(__webpack_require__(167));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-const {
-  OptionsResult,
-  TextResult,
-  CommandResult
-} = _index.default;
-_yarnBound.default.OptionsResult = OptionsResult;
-_yarnBound.default.TextResult = TextResult;
-_yarnBound.default.CommandResult = CommandResult;
-var _default = _yarnBound.default;
-exports["default"] = _default;
-module.exports = exports.default;
-
-/***/ }),
-
 /***/ 279:
 /***/ ((module, exports) => {
 
@@ -3896,12 +3866,46 @@ module.exports = exports.default;
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module is referenced by other modules so it can't be inlined
-/******/ 	var __webpack_exports__ = __webpack_require__(352);
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+(() => {
+var exports = __webpack_exports__;
+
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+Object.defineProperty(exports, "CommandResult", ({
+  enumerable: true,
+  get: function get() {
+    return _index.CommandResult;
+  }
+}));
+Object.defineProperty(exports, "OptionsResult", ({
+  enumerable: true,
+  get: function get() {
+    return _index.OptionsResult;
+  }
+}));
+Object.defineProperty(exports, "TextResult", ({
+  enumerable: true,
+  get: function get() {
+    return _index.TextResult;
+  }
+}));
+exports.YarnBound = void 0;
+
+var _YarnBound = _interopRequireWildcard(__webpack_require__(424));
+
+exports.YarnBound = _YarnBound;
+
+var _index = __webpack_require__(167);
+
+function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
+
+function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+})();
+
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
