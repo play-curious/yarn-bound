@@ -3494,6 +3494,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 // mutates node, processing [markup /] and `character:`
 function parseLine(node, locale) {
   node.markup = [];
+  console.log("NTM", node);
+  debugger;
   parseCharacterLabel(node);
   parseMarkup(node, locale);
   node.text = node.text.replace(/(?:\\(.))/g, '$1');
@@ -3753,7 +3755,7 @@ class YarnBound {
     this.currentResult = null;
     this.history = [];
     this.locale = locale;
-    this.runner = new _index.default.Runner();
+    this.runner = new _index.default.default.Runner();
     this.runner.noEscape = true; // To make template string dialogues more convenient, we will allow and strip
     // uniform leading whitespace. The header delimiter will set the baseline.
 

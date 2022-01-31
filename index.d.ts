@@ -23,6 +23,7 @@ declare module "yarn-bound" {
     text: string;
     hashtags: string[];
     metadata: Metadata;
+    character?: string;
   }
   
   export class OptionsResult {
