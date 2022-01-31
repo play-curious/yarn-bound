@@ -23,7 +23,7 @@ declare module "yarn-bound" {
     text: string;
     hashtags: string[];
     metadata: Metadata;
-    character?: string;
+    markups: Markups[];
   }
   
   export class OptionsResult {
@@ -46,5 +46,10 @@ declare module "yarn-bound" {
       text: string;
       isAvailable: boolean;
       hashtags: [];
+  }
+
+  export interface Markups {
+    name: string;
+    properties: Record<string, any>;
   }
 }

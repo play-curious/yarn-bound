@@ -1,8 +1,6 @@
 // mutates node, processing [markup /] and `character:`
 export default function parseLine (node, locale) {
   node.markup = []
-  console.log("NTM", node);
-  debugger;
   parseCharacterLabel(node)
   parseMarkup(node, locale)
   node.text = node.text.replace(/(?:\\(.))/g, '$1')

@@ -3494,8 +3494,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 // mutates node, processing [markup /] and `character:`
 function parseLine(node, locale) {
   node.markup = [];
-  console.log("NTM", node);
-  debugger;
   parseCharacterLabel(node);
   parseMarkup(node, locale);
   node.text = node.text.replace(/(?:\\(.))/g, '$1');
