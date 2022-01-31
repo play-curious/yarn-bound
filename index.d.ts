@@ -45,7 +45,7 @@ declare module "yarn-bound" {
   export interface Option {
       text: string;
       isAvailable: boolean;
-      hashtags: [];
+      hashtags: string[];
   }
 
   export interface Markups {
