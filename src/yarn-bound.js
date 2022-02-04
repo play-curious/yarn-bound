@@ -18,7 +18,7 @@ export class YarnBound {
     this.currentResult = null
     this.history = []
     this.locale = locale
-    this.runner = new bondage.default.Runner()
+    this.runner = new bondage.Runner()
     this.runner.noEscape = true
 
     // To make template string dialogues more convenient, we will allow and strip
@@ -44,7 +44,7 @@ export class YarnBound {
     }
 
     this.generator = this.runner.run(startAt)
-    this.advance()
+    //this.advance()
   }
 
   advance (optionIndex) {

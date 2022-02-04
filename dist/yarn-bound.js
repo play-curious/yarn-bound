@@ -3776,8 +3776,7 @@ class YarnBound {
       });
     }
 
-    this.generator = this.runner.run(startAt);
-    this.advance();
+    this.generator = this.runner.run(startAt); //this.advance()
   }
 
   advance(optionIndex) {
